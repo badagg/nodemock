@@ -1,0 +1,328 @@
+body {
+  background: #111;
+  overflow: hidden;
+}
+.root-wrap{
+	
+}
+
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background: #000;
+	height: 60px;
+	border-bottom: 1px solid #333;
+	h1{
+		color: #eee;
+		padding: 10px 20px;
+		float: left;
+	}
+	span{
+		color: #999;
+	}
+}
+
+.wrap{
+	position: absolute;
+	width: 100%;
+	top:61px;
+	bottom: 40px;
+	display: flex;
+	background: #151515;
+}
+.wrap .item{
+	height: 100%;
+	background: #151515;
+	flex:2;
+	border-left: 1px solid #333;
+	overflow: auto;
+}
+.wrap .cate{
+	flex:1;
+	border-left: none;
+	min-width: 160px;
+}
+.wrap .item .con{
+	padding: 10px;
+	color: #fff;
+}
+.wrap .cate .con{
+	padding-left: 10px;
+}
+.wrap .cate .con h3{
+	font-weight: normal;
+	font-size: 14px;
+	color: #eee;
+	border-left: 5px solid #78BB1F;
+    padding-left: 10px;
+    height: 16px;
+	line-height: 16px;
+	margin-bottom:12px;
+}
+.wrap .cate .con h3:hover button{
+	display: block;
+}
+.wrap .cate .con h3 button{
+	float: right;
+	border:none;
+	padding: 1px 6px;
+	background: #333;
+	color: #999;
+	outline: none;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-left: 3px;
+	/*transition: all .3s;*/
+	display: none;
+	transition: all .3s;
+	&.add{
+		background: #78BB1F;
+		color: #fff;
+	}
+}
+.wrap .cate .con h3 button:hover{
+	color: #fff;
+	background: #444;
+}
+.wrap .cate .con h3 button:active{
+	background: #222;
+}
+.wrap .cate .con ul{
+	margin-bottom: 20px;
+}
+.wrap .cate .con li{
+	height: 28px;
+	line-height: 28px;
+	text-indent: 16px;
+	color: #999;
+	transition: all .5s;
+	cursor: pointer;
+	border-radius:5px;
+	margin-bottom: 2px;
+	&.cur{
+		color: #fff;
+		background: #78BB1F;
+	}
+}
+.wrap .cate .con li:hover{
+	background: #78BB1F;
+	color: #eee;
+}
+.wrap .cate .con li:hover button{
+	display: block;
+}
+.wrap .cate .con li button{
+	float: right;
+	border:none;
+	background: transparent;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+	margin-right:10px;
+	line-height: 28px;
+	display: none;
+}
+.wrap .cate .con li button:hover{
+	color: #fff;
+}
+
+.wrap .edit{
+	position: relative;
+	display: flex;
+}
+.edit-box{
+	position: relative;
+	outline: none;
+	color: #eee;
+	padding:0 10px;
+	height: 100%;
+	background: transparent;
+	border:none;
+	resize : none;
+	line-height: 20px;
+	flex:1;
+}
+
+.footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 40px;
+	background: #111;
+	border-top: 1px solid #333;
+	select{
+		padding: 2px 10px;
+		margin: 0 10px;
+		outline: none;
+		border: 1px solid #222;
+		background: transparent;
+		border-radius: 3px;
+		text-align: center;
+		color: #eee
+	}
+	span{
+		margin: 0 10px;
+		color: #999;
+		em{
+			margin: 0 5px;
+			color: #ddd;
+		}
+	}
+}
+
+.create{
+	float: right;
+	padding:5px 20px 0 0;
+}
+.create button{
+	border:none;
+	padding: 5px 15px;
+	background: #333;
+	color: #999;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+.create button:hover{
+	color: #fff;
+	background: #78BB1F;
+}
+.create button:active{
+	background: #222;
+}
+
+.footer .create{
+	transition: all .3s;
+	transform:translate3d(0,60px,0);
+	&.view{
+		transform:translate3d(0,0,0);
+	}
+}
+
+.header .create{
+	padding:32px 20px 0 0;
+}
+.header .create button{
+	border-radius: 3px 3px 0 0;
+}
+
+.login{
+	color: #999;
+	background: #222;
+	border:1px solid #333;
+	padding: 20px 20px 0px 20px;
+	width: 260px;
+	margin: 30px auto;
+	span{
+		width: 60px;
+		text-align: left;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	p{
+		margin: 10px;
+	}
+	input{
+		border:none;
+		background:transparent;
+		border:1px solid #666;
+		outline: none;
+		color: #999;
+		padding: 2px 5px;
+		&:focus{
+			border-color: #999;
+		}
+	}
+	.btn{
+		text-align: right;
+		padding-right: 43px;
+		button{
+			outline: none;
+			padding: 3px 10px;
+			border: none;
+			background: #333;
+			color: #999;
+			cursor: pointer;
+			&:hover{
+				background: #444;
+			}
+			&:active{
+				background: #111;
+			}
+		}
+	}
+	.tips{
+		color: #f60;
+	}
+}
+
+.alert{
+	position: absolute;
+	height: 28px;
+	line-height: 28px;
+	left: 10px;
+	bottom: 7px;
+	color: #999;
+	input{
+		background: #555;
+		border:none;
+		color: #fff;
+		outline: none;
+		width: 140px;
+		padding: 3px 10px;
+		border-radius: 3px;
+	}
+	input::-webkit-input-placeholder{
+		color: #222;
+	}
+	transition: all .3s;
+	transform:translate3d(-200px,0,0);
+	.project{
+		float: left;
+	}
+	.apilist{
+		float: left;
+	}
+	.tips{
+		float: left;
+		margin: 0 10px;
+		color: #f60;
+	}
+	select{
+		padding: 3px 10px;
+		margin: 0 10px;
+		outline: none;
+		border: none;
+		background: #555;
+		border-radius: 3px;
+		text-align: center;
+		color: #eee
+	}
+}
+
+code, kbd, pre, samp,.code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace, 'Helvetica Neue', 'Lucida Grande', 'Lantinghei SC', 'Open Sans', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    font-size: 12px;
+}
+
+.error{
+	background: rgba(255, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

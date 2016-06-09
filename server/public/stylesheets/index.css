@@ -1,0 +1,164 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body {
+  background: #111;
+}
+
+.header{
+	position: relative;
+	background: #000;
+	height: 60px;
+	border-bottom: 1px solid #333;
+}
+.header h1{
+	color: #eee;
+	padding: 10px 20px;
+	float: left;
+}
+
+.wrap{
+	position: relative;
+	display: flex;
+	background: #fff;
+}
+.wrap .item{
+	height: 100%;
+	background: #151515;
+	flex:2;
+	border-left: 1px solid #333;
+	overflow: auto;
+}
+.wrap .cate{
+	flex:1.2;
+}
+.wrap .item .con{
+	padding: 10px;
+	color: #fff;
+}
+.wrap .cate .con{
+	padding-left: 20px;
+}
+.wrap .cate .con h3{
+	font-weight: normal;
+	font-size: 14px;
+	color: #eee;
+}
+.wrap .cate .con h3:hover button{
+	display: block;
+}
+.wrap .cate .con h3 button{
+	float: right;
+	border:none;
+	padding: 1px 6px;
+	background: #333;
+	color: #999;
+	outline: none;
+	cursor: pointer;
+	/*transition: all .3s;*/
+	display: none;
+}
+.wrap .cate .con h3 button:hover{
+	color: #fff;
+	background: #444;
+}
+.wrap .cate .con h3 button:active{
+	background: #222;
+}
+.wrap .cate .con ul{
+	margin-bottom: 15px;
+}
+.wrap .cate .con li{
+	height: 24px;
+	line-height: 24px;
+	margin: 5px 0;
+	text-indent: 10px;
+	color: #999;
+	transition: all .5s;
+	cursor: pointer;
+}
+.wrap .cate .con li:hover{
+	background: #000;
+	color: #eee;
+}
+.wrap .cate .con li:hover button{
+	display: block;
+}
+.wrap .cate .con li button{
+	float: right;
+	border:none;
+	background: transparent;
+	color: #999;
+	outline: none;
+	cursor: pointer;
+	margin-right:10px;
+	line-height: 24px;
+	display: none;
+}
+.wrap .cate .con li button:hover{
+	color: #fff;
+}
+
+
+.edit-box{
+	outline: none;
+	padding: 10px;
+	color: #eee;
+}
+
+.footer{
+	height: 39px;
+	background: #111;
+	border-top: 1px solid #333;
+}
+
+.create{
+	float: right;
+	padding:5px 20px 0 0;
+}
+.create button{
+	border:none;
+	padding: 5px 20px;
+	background: #333;
+	color: #999;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+.create button:hover{
+	color: #fff;
+	background: #555;
+}
+.create button:active{
+	background: #222;
+}
+
+.header .create{
+	padding:32px 20px 0 0;
+}
+.header .create button{
+	border-radius: 3px 3px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
